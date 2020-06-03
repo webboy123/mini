@@ -1,21 +1,5 @@
 /**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}
+.tabNav{z-index: 4; position: fixed; top:0;left:0; width:100%; height:80rpx; line-height: 80rpx; background: #f6f6f6; display: flex; padding:0 30rpx; box-sizing: border-box; }
+.tabNav> view{text-align: center; margin-right:50rpx;}
+.tabNav> view:last-child{ margin-right: 0;}
+.tabNav> view text{padding:0 15rpx; height:75rpx; display:inline-block;color:#80bd01}

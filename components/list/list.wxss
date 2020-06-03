@@ -1,0 +1,27 @@
+/* components/list/list.wxss */
+.list {
+  width:750rpx;
+  height:120rpx;
+  margin-top:-120rpx;
+  padding:15rpx 15rpx;
+  box-sizing: border-box;
+  background:green;
+}
+.list-one{
+  width:90rpx;
+  height:90rpx;
+  background:red;
+  display: inline-block;
+}
+.list-two{
+  display: inline-block;
+  width:80rpx;
+  height:90rpx;
+  margin-left:20rpx;
+}
+.list-two-a{
+  width:80rpx;
+  height:40rpx;
+  background:red;
+  margin-top:30rpx
+}

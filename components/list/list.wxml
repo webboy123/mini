@@ -1,0 +1,14 @@
+<!--components/list/list.wxml-->
+<view>
+  <view class="list">
+    <view class="list-one">
+      
+    </view>
+    <view class="list-two">
+      <view class="list-two-a">
+        
+      </view>
+    </view>
+  </view>
+</view>
+
