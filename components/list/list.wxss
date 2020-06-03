@@ -5,7 +5,6 @@
   margin-top:-120rpx;
   padding:15rpx 15rpx;
   box-sizing: border-box;
-  background:green;
 }
 .list-one{
   width:90rpx;
@@ -27,8 +26,15 @@
 }
 .list-three{
   display: inline-block;
-  width:340rpx;
+  width:400rpx;
   height:90rpx;
   background:red;
   margin-left:10rpx;
+}
+.list-four{
+  display: inline-block;
+  width:90rpx;
+  height:90rpx;
+  background:red;
+  margin-left:30rpx;
 }

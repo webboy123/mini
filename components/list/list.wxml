@@ -1,5 +1,5 @@
 <!--components/list/list.wxml-->
-<view>
+<view vx:for="{{list}}">
   <view class="list">
     <view class="list-one">
       
@@ -10,6 +10,14 @@
       </view>
     </view>
     <view class="list-three">
+      <view>
+        11111
+      </view>
+      <view>
+        2222
+      </view>
+    </view>
+    <view class="list-four">
       
     </view>
   </view>

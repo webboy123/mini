@@ -3,5 +3,5 @@
   <view class="tabNav">
     <view wx:for="{{navTab}}" wx:key="index"  bindtap="currentTab" class="{{currentTab==index ? 'cur' : ''}}"><text>{{item}}</text></view>
   </view>
-  <list></list>
+  <list list='{{list}}'></list>
 </view>
