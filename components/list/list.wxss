@@ -25,3 +25,10 @@
   background:red;
   margin-top:30rpx
 }
+.list-three{
+  display: inline-block;
+  width:340rpx;
+  height:90rpx;
+  background:red;
+  margin-left:10rpx;
+}
