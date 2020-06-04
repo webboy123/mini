@@ -1,8 +1,8 @@
 <!--components/list/list.wxml-->
-<view>
+<view wx:for="{{list}}">
   <view class="list">
     <view class="list-one">
-      
+      <image style="width:90rpx;height:90rpx" src="{{item.author.avatar_url}}" />
     </view>
     <view class="list-two">
       <view class="list-two-a">

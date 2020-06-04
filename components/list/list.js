@@ -5,7 +5,13 @@ Component({
    */
   properties: {
     list:{
-      type:Array
+      type:Array,
+      // observer:function(){
+      //   const _this = this;
+      //   this.setData({
+      //     list:_this.properties.list
+      //   })
+      // }
     }
   },
 
@@ -13,7 +19,6 @@ Component({
    * 组件的初始数据
    */
   data: {
-    
   },
 
   /**
@@ -23,6 +28,5 @@ Component({
     
   },
   attached(){
-    console.log("1111",this.properties.list)
   }
 })
