@@ -2,16 +2,12 @@
 .list {
   width:750rpx;
   height:120rpx;
-  margin-top:20rpx;
   padding:15rpx 15rpx;
   box-sizing: border-box;
-  background:pink;
-  margin-top:80rpx;
 }
 .list-one{
   width:90rpx;
   height:90rpx;
-  background:red;
   display: inline-block;
 }
 .list-two{
