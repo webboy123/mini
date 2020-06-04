@@ -5,6 +5,8 @@
   margin-top:20rpx;
   padding:15rpx 15rpx;
   box-sizing: border-box;
+  background:pink;
+  margin-top:80rpx;
 }
 .list-one{
   width:90rpx;
