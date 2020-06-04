@@ -1,5 +1,5 @@
 <!--components/list/list.wxml-->
-<view vx:for="{{list}}">
+<view>
   <view class="list">
     <view class="list-one">
       

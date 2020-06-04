@@ -43,6 +43,7 @@ Page({
         },
         success:res => {
           if (res.statusCode == 200){
+            console.log("res.data.data",res.data.data)
             this.setData({
               list:res.data.data
             })

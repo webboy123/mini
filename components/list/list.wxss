@@ -2,7 +2,7 @@
 .list {
   width:750rpx;
   height:120rpx;
-  margin-top:-120rpx;
+  margin-top:20rpx;
   padding:15rpx 15rpx;
   box-sizing: border-box;
 }
