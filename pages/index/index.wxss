@@ -1,5 +1,3 @@
 /**index.wxss**/
 .tabNav{width:100%; height:80rpx; line-height: 80rpx; background: #f6f6f6; display: flex;justify-content: space-around;}
-.tabNav> view{text-align: center; margin-right:50rpx;}
-.tabNav> view:last-child{ margin-right: 0;}
-.tabNav> view text{padding:0 15rpx; height:75rpx; display:inline-block;color:#80bd01}
+.tabNav> view text{color:#80bd01}

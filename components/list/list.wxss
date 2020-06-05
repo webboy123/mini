@@ -4,33 +4,40 @@
   height:120rpx;
   padding:15rpx 15rpx;
   box-sizing: border-box;
+  display:flex
 }
-.list-one{
+.list .list-one{
   width:90rpx;
   height:90rpx;
-  display: inline-block;
 }
-.list-two{
-  display: inline-block;
+.list .list-two{
   width:80rpx;
   height:90rpx;
   margin-left:20rpx;
 }
-.list-two-a{
+.list .list-two .list-two-a{
   width:80rpx;
   height:40rpx;
   background:red;
   margin-top:30rpx
 }
-.list-three{
-  display: inline-block;
+.list .list-three{
   width:400rpx;
   height:90rpx;
   background:red;
   margin-left:10rpx;
 }
-.list-four{
-  display: inline-block;
+.list .list-three .list-three-a{
+  width:400rpx;
+  height:45rpx;
+  background:green;
+}
+.list .list-three .list-three-b{
+  width:400rpx;
+  height:45rpx;
+  background:pink;
+}
+.list .list-four{
   width:90rpx;
   height:90rpx;
   background:red;
