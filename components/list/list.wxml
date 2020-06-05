@@ -2,16 +2,19 @@
 <view wx:for="{{list}}" wx:key="index">
   <view class="list">
     <view class="list-one">
-      <image style="width:90rpx;height:90rpx" src="{{item.author.avatar_url}}" />
+      <image style="width:70rpx;height:70rpx" src="{{item.author.avatar_url}}" />
     </view>
     <view class="list-two">
       <view class="list-two-a">
+        {{item.top?"置顶":(item.tab === "ask"?"问答":"分享")}}
       </view>
     </view>
     <view class="list-three">
       <view class="list-three-a">
+        {{item.title}}
       </view>
       <view class="list-three-b">
+        {{item.reply_count}}/{{item.visit_count}}
       </view>
     </view>
     <view class="list-four">
