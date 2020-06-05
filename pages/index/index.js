@@ -39,7 +39,7 @@ Page({
         'content-type': 'application/json' // 默认值
         },
         data:{
-
+          
         },
         success:res => {
           if (res.statusCode == 200){
