@@ -10,7 +10,7 @@
       </view>
     </view>
     <view class="list-three">
-      <view class="list-three-a">
+      <view class="list-three-a" id="{{item.id}}" bindtap="skipToDetail">
         {{item.title}}
       </view>
       <view class="list-three-b">

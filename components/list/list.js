@@ -25,7 +25,11 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    
+    skipToDetail(e) {
+      wx.navigateTo({
+        url:"../detail/detail?id="+e.target.id
+      })
+    }
   },
   attached(){
   }
