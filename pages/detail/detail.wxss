@@ -1,1 +1,25 @@
 /* pages/detail/detail.wxss */
+.title{
+    width:100%;
+    padding:20rpx;
+    box-sizing: border-box;
+}
+.title-one {
+    width:100%;
+    display:flex;
+}
+.title-a{
+    width:80rpx;
+    height:40rpx;
+    line-height:40rpx;
+    text-align:center;
+    font-size:30rpx;
+    background:#80bd01;
+    border-radius: 5rpx;
+}
+.title-b{
+    width:350rpx;
+    margin-left:10rpx;
+    font-weight:bolder;
+    font-size:30rpx;
+}

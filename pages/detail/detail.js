@@ -6,9 +6,7 @@ Page({
    */
   data: {
     titleId:'',
-    topicsDetail:{
-
-    }
+    topicsDetail:{}
   },
   getTopicsDetail(){
     wx.request({
@@ -19,8 +17,13 @@ Page({
       data:{
         
       },
-      success:function(res){
+      success:res => {
         console.log("res",res)
+        if(res.statusCode == 200){
+          this.setData({
+            topicsDetail:res.data.data
+          })
+        }
       }
     })
   },

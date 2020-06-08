@@ -1,2 +1,13 @@
 <!--pages/detail/detail.wxml-->
-<text>详情页{{titleId}}</text>
+<view>
+    <view class="title">
+        <view class="title-one">
+            <view class="title-a">
+                {{topicsDetail.top?"置顶":(topicsDetail.tab === "ask"?"问答":"分享")}}
+            </view>
+            <view class="title-b">
+                {{topicsDetail.title}}
+            </view>
+        </view>
+    </view>
+</view>
