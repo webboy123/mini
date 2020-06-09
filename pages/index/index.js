@@ -1,7 +1,7 @@
 //index.js
 //获取应用实例
 const app = getApp()
-
+const request = require("../../utils/request.js")
 Page({
   data: {
     navTab: ['全部','精华','分享', '客户端测试'],        
@@ -33,22 +33,10 @@ Page({
     this.data.sendList=[];
   },
   getInitData(){
-      wx.request({
-        url:"https://cnodejs.org/api/v1/topics",
-        header: {
-        'content-type': 'application/json' // 默认值
-        },
-        data:{
-          
-        },
-        success:res => {
-          if (res.statusCode == 200){
-            console.log("res.data.data",res.data.data)
-            this.setData({
-              list:res.data.data
-            })
-          }
-        }
+    request("https://cnodejs.org/api/v1/topics",'get',{}).then(res => {
+      this.setData({
+        list:res.data
       })
-    },
+    })
+  },
 })

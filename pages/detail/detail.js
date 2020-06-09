@@ -1,4 +1,5 @@
 // pages/detail/detail.js
+const request = require("../../utils/request.js")
 Page({
 
   /**
@@ -9,22 +10,12 @@ Page({
     topicsDetail:{}
   },
   getTopicsDetail(){
-    wx.request({
-      url:"https://cnodejs.org/api/v1/topic/"+this.data.titleId,
-      header: {
-        'content-type': 'application/json' // 默认值
-      },
-      data:{
-        
-      },
-      success:res => {
-        console.log("res",res)
-        if(res.statusCode == 200){
-          this.setData({
-            topicsDetail:res.data.data
-          })
-        }
-      }
+    request("https://cnodejs.org/api/v1/topic/"+this.data.titleId,'get',{}).then((res) => {
+      // console.log("res",res)
+      console.log("this",this)
+      this.setData({
+        topicsDetail:res.data
+      })
     })
   },
   /**
