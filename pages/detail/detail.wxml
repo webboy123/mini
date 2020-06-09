@@ -10,7 +10,7 @@
             </view>
         </view>
         <view class="title-two">
-            <li>发布于{{time}}</li>
+            <li>发布于{{topicsDetail.create_at}}</li>
         </view>
     </view>
 </view>

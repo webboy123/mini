@@ -1,6 +1,6 @@
 // pages/detail/detail.js
 const request = require("../../utils/request.js")
-const util = require("../../utils/util")
+const util = require("../../utils/util.js")
 Page({
 
   /**
@@ -16,7 +16,6 @@ Page({
       console.log("res",res)
       this.setData({
         topicsDetail:res.data,
-        time:util.datedifference(res.data.create_at)
       })
     })
   },
