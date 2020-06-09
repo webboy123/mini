@@ -6,6 +6,8 @@ module.exports = function(url,method,data) {
     header = { "Content-Type": "application/x-www-form-urlencoded" }
   }
   return new Promise((resolve,reject) => {
+    const baseUrl = 'https://cnodejs.org/api/v1/';
+    url = baseUrl + url;
     wx.request({
       url,
       method,

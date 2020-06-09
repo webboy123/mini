@@ -1,5 +1,6 @@
 // pages/detail/detail.js
 const request = require("../../utils/request.js")
+const util = require("../../utils/util")
 Page({
 
   /**
@@ -7,14 +8,15 @@ Page({
    */
   data: {
     titleId:'',
-    topicsDetail:{}
+    topicsDetail:{},
+    time:''
   },
   getTopicsDetail(){
-    request("https://cnodejs.org/api/v1/topic/"+this.data.titleId,'get',{}).then((res) => {
-      // console.log("res",res)
-      console.log("this",this)
+    request("topic/"+this.data.titleId,'get',{}).then((res) => {
+      console.log("res",res)
       this.setData({
-        topicsDetail:res.data
+        topicsDetail:res.data,
+        time:util.datedifference(res.data.create_at)
       })
     })
   },

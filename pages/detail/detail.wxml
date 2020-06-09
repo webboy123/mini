@@ -2,12 +2,15 @@
 <view>
     <view class="title">
         <view class="title-one">
-            <view class="title-a">
+            <view class="title-one-a">
                 {{topicsDetail.top?"置顶":(topicsDetail.tab === "ask"?"问答":"分享")}}
             </view>
-            <view class="title-b">
+            <view class="title-one-b">
                 {{topicsDetail.title}}
             </view>
+        </view>
+        <view class="title-two">
+            <li>发布于{{time}}</li>
         </view>
     </view>
 </view>

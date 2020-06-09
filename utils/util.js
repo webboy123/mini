@@ -14,6 +14,18 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+const datedifference = (sDate1, sDate2) {    //sDate1和sDate2是2006-12-18格式 
+  let dateSpan,
+      tempDate,
+      iDays;
+  sDate1 = Date.parse(sDate1);
+  sDate2 = Date.parse(sDate2);
+  dateSpan = sDate2 - sDate1;
+  dateSpan = Math.abs(dateSpan);
+  iDays = Math.floor(dateSpan / (24 * 3600 * 1000));
+  return iDays
+};
 module.exports = {
-  formatTime: formatTime
+  formatTime,
+  datedifference
 }

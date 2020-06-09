@@ -8,7 +8,7 @@
     width:100%;
     display:flex;
 }
-.title-a{
+.title-one-a{
     width:80rpx;
     height:40rpx;
     line-height:40rpx;
@@ -17,9 +17,12 @@
     background:#80bd01;
     border-radius: 5rpx;
 }
-.title-b{
+.title-one-b{
     width:350rpx;
     margin-left:10rpx;
     font-weight:bolder;
     font-size:30rpx;
+}
+.title-two {
+    margin-top:20rpx
 }
