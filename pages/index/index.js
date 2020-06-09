@@ -34,6 +34,7 @@ Page({
   },
   getInitData(){
     request("https://cnodejs.org/api/v1/topics",'get',{}).then(res => {
+      console.log("res",res)
       this.setData({
         list:res.data
       })
