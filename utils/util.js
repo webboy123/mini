@@ -27,13 +27,13 @@ const datedifference = (sDate1, sDate2) => {    //sDate1和sDate2是2006-12-18�
 };
 function formatDate(date){ //设置时间转换格式
 
-  const y = date.getFullYear();  //获取年
+  let y = date.getFullYear();  //获取年
   
-      const m = date.getMonth() + 1;  //获取月
+      let m = date.getMonth() + 1;  //获取月
   
       m = m < 10 ? '0' + m : m;  //判断月是否大于10
   
-      const d = date.getDate();  //获取日
+      let d = date.getDate();  //获取日
   
       d = d < 10 ? ('0' + d) : d;  //判断日期是否大10
   
