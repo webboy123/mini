@@ -9,7 +9,6 @@ Page({
   data: {
     titleId:'',
     topicsDetail:{},
-    time:''
   },
   getTopicsDetail(){
     request("topic/"+this.data.titleId,'get',{}).then((res) => {
