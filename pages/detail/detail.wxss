@@ -1,6 +1,7 @@
 /* pages/detail/detail.wxss */
 .title{
     width:100%;
+    height:240rpx;
     padding:20rpx;
     box-sizing: border-box;
 }
@@ -27,6 +28,9 @@
     margin-top:20rpx;
     color:#838383;
     font-size:24rpx;
+    width:100%;
+    height:120rpx;
+    border-bottom: 1rpx solid #838383;
 }
 .title-two text {
     margin-right:10rpx
@@ -35,4 +39,9 @@
     content:'•';
     margin-right:10rpx;
     margin-bottom:10rpx;
+}
+.rich-text {
+    width:100%;
+    padding:5%;
+    box-sizing: border-box;
 }

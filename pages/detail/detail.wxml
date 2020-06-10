@@ -13,4 +13,7 @@
             <text>发布于{{topicsDetail.create_at}}</text><text>作者{{topicsDetail.author.loginname}}</text><text>{{topicsDetail.visit_count}}次浏览</text><text>最后一次编辑时间{{topicsDetail.last_reply_at}}</text><text>来自 {{topicsDetail.tab == "ask" ? '问答' : '分享'}}</text>
         </view>
     </view>
+    <view class="rich-text">
+        <rich-text nodes="{{topicsDetail.content}}"></rich-text>
+    </view>
 </view>
