@@ -14,12 +14,11 @@ Page({
   getTopicsDetail(){
     request("topic/"+this.data.titleId,'get',{}).then((res) => {
       console.log("res",res)
-      let result = res.data.content;
-      const regex = new RegExp('<p', 'gi');
-      result = result.replace(regex, `<p style="margin-bottom:20rpx"`);
+      let richText = res.data.content;
+      richText = richText.replace(/<p>/ig, `<p style="margin-bottom:20rpx;color:red"`);
       this.setData({
         topicsDetail:res.data,
-        richText:result
+        richText:richText
       })
     })
   },
