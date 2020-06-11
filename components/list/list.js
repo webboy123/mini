@@ -6,12 +6,6 @@ Component({
   properties: {
     list:{
       type:Array,
-      // observer:function(){
-      //   const _this = this;
-      //   this.setData({
-      //     list:_this.properties.list
-      //   })
-      // }
     }
   },
 

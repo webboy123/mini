@@ -16,10 +16,10 @@
     <view class="rich-text">
         <rich-text nodes="{{topicsDetail.content}}"></rich-text>
     </view>
-    <view style='width:100%;height:80rpx;padding-left:5%;box-sizing:border-box;line-height:80rpx;'>
+    <view style='width:100%;height:80rpx;padding-left:3%;box-sizing:border-box;line-height:80rpx;'>
         {{topicsDetail.reply_count}} 回复
     </view>
-    <view style="background:white;padding-left:5%;box-sizing:border-box;">
-        <reply-list></reply-list>  
+    <view style="background:white;padding:3%;box-sizing:border-box;">
+        <reply-list list="{{topicsDetail.replies}}" ></reply-list>  
     </view>
 </view>
