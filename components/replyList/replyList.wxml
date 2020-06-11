@@ -9,12 +9,16 @@
         <view style="width:180rpx;height:80rpx;font-size:25rpx;font-weight:bold;padding:3%;box-sizing:border-box;color:#666">
           {{item.author.loginname}}
         </view>
-        <view style="height:80rpx;padding-top:3%;box-sizing:border-box;font-size:25rpx;font-weight:bold;">
-          111111111
+        <view style="height:80rpx;padding-top:3%;box-sizing:border-box;font-size:25rpx;font-weight:bold;color:#08c">
+          <text>{{index+1}}楼•4个月前</text>
         </view>
       </view>
       <view class="reply-one-b">
+        {{item.ups.length}}
       </view>
+    </view>
+    <view class="reply-two">
+      <rich-text nodes="{{item.content}}"></rich-text>
     </view>
   </view>
 </view>

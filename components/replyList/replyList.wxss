@@ -2,7 +2,8 @@
 .reply{
   width:100%;
   background:white;
-  border-bottom:1rpx solid #f0f0f0
+  border-bottom:1rpx solid #f0f0f0;
+  margin-bottom:20rpx;
 }
 .reply-one {
   width:100%;
@@ -15,6 +16,15 @@
   display: flex;
 }
 .reply-one-b{
-  width:20%;
-  background:greenyellow;
+  width:5%;
+  padding:2%;
+  box-sizing: border-boxs;
+  height:80rpx;
+  font-size:25rpx;
+  font-weight:bold;
+  color:gray
+}
+.reply-two {
+  padding:3% 0;
+  box-sizing: border-box;
 }
