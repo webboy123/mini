@@ -1,0 +1,12 @@
+/* components/topics/topics.wxss */
+.topics{
+    width:100%;
+    background:white;
+}
+.topics-one{
+    border-top:1px solid #f0f0f0;
+    height:100rpx;
+    width:100%;
+    padding-left:3%;
+    box-sizing: border-box;
+}

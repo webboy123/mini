@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/detail/detail",
-    "components/replyList/replyList"
+    "components/replyList/replyList",
+    "pages/user/user"
   ],
   "window": {
     "backgroundTextStyle": "light",

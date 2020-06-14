@@ -23,6 +23,11 @@ Component({
       wx.navigateTo({
         url:"../detail/detail?id="+e.target.id
       })
+    },
+    skipToUser(e){
+      wx.navigateTo({
+        url:'../user/user?user='+e.target.dataset.user
+      })
     }
   },
   attached(){

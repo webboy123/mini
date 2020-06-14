@@ -1,0 +1,37 @@
+<!--pages/user/user.wxml-->
+<view>
+    <view class="user">
+        <view class="user-img">
+            <view>
+                <image style="width:80rpx;height:80rpx" src="{{info.avatar_url}}" /> 
+            </view>
+            <view style="margin-left:20rpx;color:#778087">
+                {{info.loginname}}
+            </view>
+        </view>
+        <view style="margin-top:10rpx">
+            {{info.score}} 积分
+        </view>
+        <view style="color:#ababab;margin-top:10rpx">
+            注册时间{{info.create_at}}
+        </view>
+    </view>
+    <view class="create">
+        <view class="create-one">
+            最近创建的话题
+        </view>
+        <topics></topics>
+        <view class="create-two">
+            查看更多»
+        </view>
+    </view>
+    <view class="join">
+        <view class="join-one">
+            最近参与的话题
+        </view>
+        <topics></topics>
+        <view class="join-two">
+            查看更多»
+        </view>
+    </view>
+</view>

@@ -2,7 +2,7 @@
 <view wx:for="{{list}}" wx:key="index">
   <view class="list">
     <view class="list-one">
-      <image style="width:70rpx;height:70rpx" src="{{item.author.avatar_url}}" />
+      <image bindtap='skipToUser' data-user="{{item.author.loginname}}" style="width:70rpx;height:70rpx" src="{{item.author.avatar_url}}" />
     </view>
     <view class="list-two">
       <view class="list-two-a">
