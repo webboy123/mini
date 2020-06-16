@@ -20,18 +20,18 @@
         <view class="create-one">
             最近创建的话题
         </view>
-        <topics></topics>
-        <view class="create-two">
+        <topics info="{{info}}" apply="{{apply}}"></topics>
+        <!-- <view class="create-two">
             查看更多»
-        </view>
+        </view> -->
     </view>
     <view class="join">
         <view class="join-one">
             最近参与的话题
         </view>
-        <topics></topics>
-        <view class="join-two">
+        <topics info="{{info}}"></topics>
+        <!-- <view class="join-two">
             查看更多»
-        </view>
+        </view> -->
     </view>
 </view>

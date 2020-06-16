@@ -7,7 +7,8 @@ Page({
    */
   data: {
     user:'',
-    info:{}
+    info:{},
+    apply:true
   },
   getUserInfo() {
     request('user/'+this.data.user,'get',{}).then((res) => {
