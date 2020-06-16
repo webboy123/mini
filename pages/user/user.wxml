@@ -20,18 +20,22 @@
         <view class="create-one">
             最近创建的话题
         </view>
-        <topics info="{{info}}" apply="{{apply}}"></topics>
-        <!-- <view class="create-two">
+        <view wx:for="{{info.recent_topics}}" wx:key="index">
+          <topics info="{{item}}" apply="{{apply}}"></topics>
+        </view>
+        <view class="create-two">
             查看更多»
-        </view> -->
+        </view>
     </view>
     <view class="join">
         <view class="join-one">
             最近参与的话题
         </view>
-        <topics info="{{info}}"></topics>
-        <!-- <view class="join-two">
+        <view wx:for="{{info.recent_replies}}" wx:key="index">
+            <topics replies="{{item}}"></topics>
+        </view>    
+        <view class="join-two">
             查看更多»
-        </view> -->
+        </view>
     </view>
 </view>

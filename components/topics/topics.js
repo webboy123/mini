@@ -7,6 +7,9 @@ Component({
     info :{
       type:Object
     },
+    replies :{
+      type:Object
+    },
     apply : Boolean
   },
 
