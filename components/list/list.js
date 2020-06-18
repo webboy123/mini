@@ -1,4 +1,5 @@
 // components/list/list.js
+const util = require("../../utils/util.js")
 Component({
   /**
    * 组件的属性列表
@@ -6,6 +7,15 @@ Component({
   properties: {
     list:{
       type:Array,
+      observer:function(newVal, oldVal){
+        const tempList = newVal.map((item) => {
+          item.last_reply_at = util.timeFn(item.last_reply_at);
+          return item;
+        })
+        this.setData({
+          newlist:tempList
+        })
+      }
     }
   },
 
@@ -13,6 +23,7 @@ Component({
    * 组件的初始数据
    */
   data: {
+    newlist:[]
   },
 
   /**

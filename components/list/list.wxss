@@ -30,14 +30,14 @@
   border-radius: 5rpx;
 }
 .list .list-three{
-  width:400rpx;
+  width:390rpx;
   height:90rpx;
   margin-left:10rpx;
   padding-top:20rpx;
   box-sizing: border-box;
 }
 .list .list-three .list-three-a{
-  width:400rpx;
+  width:390rpx;
   height:35rpx;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -46,7 +46,7 @@
   font-size:22rpx;
 }
 .list .list-three .list-three-b{
-  width:400rpx;
+  width:390rpx;
   height:35rpx;
   padding-top:10rpx;
   box-sizing: border-box;
@@ -54,8 +54,11 @@
   font-size:20rpx;
 }
 .list .list-four{
-  width:90rpx;
-  height:90rpx;
-  background:red;
+  width:100rpx;
+  height:100rpx;
   margin-left:30rpx;
+  font-size:22rpx;
+  padding-top:60rpx;
+  box-sizing: border-box;
+  color:#778087
 }

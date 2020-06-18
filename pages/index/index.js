@@ -2,12 +2,13 @@
 //获取应用实例
 const app = getApp()
 const request = require("../../utils/request.js")
+const util = require("../../utils/util.js")
 Page({
   data: {
     navTab: ['全部','精华','分享', '客户端测试'],        
     currentTab: 0,
     sendList:[],
-    list:[]
+    list:[],
   },
   select: {
     page: 1,
@@ -35,8 +36,9 @@ Page({
   getInitData(){
     request("topics",'get',{}).then(res => {
       console.log("res",res)
+      console.log("last_reply_at",util.timeFn(res.data[0].last_reply_at))
       this.setData({
-        list:res.data
+        list:res.data,
       })
     })
   },

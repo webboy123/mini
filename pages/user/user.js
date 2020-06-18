@@ -1,5 +1,6 @@
 // pages/user/user.js
 const request = require("../../utils/request.js")
+const util = require("../../utils/util.js")
 Page({
 
   /**
@@ -13,6 +14,7 @@ Page({
   getUserInfo() {
     request('user/'+this.data.user,'get',{}).then((res) => {
       console.log("res",res.data)
+      res.data.create_at = util.timeFn(res.data.create_at)
       this.setData({
         info:res.data
       })

@@ -3,35 +3,35 @@
     <view class="topics-one">
         <view wx:if="{{apply == true}}">
             <view  class="topics-one-a">
-                <image style="width:60rpx;height:60rpx" src="{{info.author.avatar_url}}"></image>
+                <image style="width:60rpx;height:60rpx" bindtap='skipToUser' data-user="{{newInfo.author.loginname}}" src="{{newInfo.author.avatar_url}}"></image>
                 <view>
                     <view class="topics-one-b">
-                        {{info.title}}
+                        {{newInfo.title}}
                     </view>
                     <view style="font-size:18rpx;margin-left:10rpx">
                         10/1000
                     </view>
                 </view>
-                <view style="width:100rpx;font-size:18rpx;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
-                    {{info.last_reply_at}}
+                <view style="width:100rpx;font-size:25rpx;color:#778087;padding-top:60rpx;box-sizing:boder-box">
+                    {{newInfo.last_reply_at}}
                 </view>
             </view>
         </view>
         <view wx:else>
             <view class="topics-one-a">
-                <image style="width:60rpx;height:60rpx" src="{{replies.author.avatar_url}}"></image>
+                <image style="width:60rpx;height:60rpx" bindtap='skipToUser' data-user="{{newReplies.author.loginname}}" src="{{newReplies.author.avatar_url}}"></image>
                 <view>
                     <view class="topics-one-b">
-                        {{replies.title}}
+                        {{newReplies.title}}
                     </view>
                     <view style="font-size:18rpx;margin-left:10rpx">
                         10/1000
                     </view>
                 </view>
-                <view style="width:100rpx;font-size:18rpx;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;">
-                    {{replies.last_reply_at}}
+                <view style="width:100rpx;font-size:25rpx;color:#778087;padding-top:60rpx;box-sizing:boder-box">
+                    {{newReplies.last_reply_at}}
                 </view>
             </view>
-            </view>
+        </view>
     </view>
 </view>
