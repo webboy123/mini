@@ -20,6 +20,7 @@ Page({
     this.getInitData()
   },
   currentTab: function (e) {
+    console.log("e",e)
     if (this.data.currentTab == e.currentTarget.dataset.idx){
       return;
     }
@@ -33,8 +34,8 @@ Page({
     }
     this.data.sendList=[];
   },
-  getInitData(){
-    request("topics",'get',{}).then(res => {
+  getInitData(data = {}){
+    request("topics",'get',data).then(res => {
       console.log("res",res)
       console.log("last_reply_at",util.timeFn(res.data[0].last_reply_at))
       this.setData({
