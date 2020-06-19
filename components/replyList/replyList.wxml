@@ -1,6 +1,6 @@
 <!--components/replyList/replyList.wxml-->
 <view>
-  <view class="reply" wx:for="{{list}}" wx:key="index">
+  <view class="reply" wx:for="{{newList}}" wx:key="index">
     <view class="reply-one"> 
       <view class="reply-one-a">
         <view style="width:80rpx;height:80rpx;">
@@ -10,8 +10,11 @@
           {{item.author.loginname}}
         </view>
         <view style="height:80rpx;padding-top:3%;box-sizing:border-box;font-size:25rpx;font-weight:bold;color:#08c">
-          <text>{{index+1}}楼•4个月前</text>
+          <text>{{index+1}}楼•{{item.create_at}}</text>
         </view>
+      </view>
+      <view class="reply-one-b" wx:if="{{item.ups.length>0}}">
+        👍{{item.ups.length}}
       </view>
     </view>
     <view class="reply-two">
@@ -19,3 +22,5 @@
     </view>
   </view>
 </view>
+
+

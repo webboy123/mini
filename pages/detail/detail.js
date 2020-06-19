@@ -19,7 +19,6 @@ Page({
       richText = richText
                         .replace(/\<img/gi,'<img style="width:100%;height:auto;"')
                         .replace(/\<pre/gi,'<pre style="width:100%;background:#f7f7f7"');
-      console.log("richText",richText)
       this.setData({
         topicsDetail:res.data,
         richText

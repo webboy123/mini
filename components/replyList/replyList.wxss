@@ -16,7 +16,7 @@
   display: flex;
 }
 .reply-one-b{
-  width:5%;
+  width:10%;
   padding:2%;
   box-sizing: border-boxs;
   height:80rpx;
