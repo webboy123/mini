@@ -1,10 +1,23 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs",
-    "pages/detail/detail",
-    "components/replyList/replyList",
-    "pages/user/user"
+    "pages/logs/logs"
+  ],
+  "subPackages": [
+    {
+      "root": "packageA",
+      "pages": [
+        "pages/detail/detail",
+        "components/replyList/replyList"
+      ]
+    },
+    {
+      "root": "packageB",
+      "pages": [
+        "pages/user/user",
+        "components/topics/topics"
+      ]
+    }
   ],
   "window": {
     "backgroundTextStyle": "light",
