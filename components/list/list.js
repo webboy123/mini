@@ -32,12 +32,12 @@ Component({
   methods: {
     skipToDetail(e) {
       wx.navigateTo({
-        url:"../detail/detail?id="+e.target.id
+        url:"/detailPackage/pages/detail/detail?id="+e.target.id
       })
     },
     skipToUser(e){
       wx.navigateTo({
-        url:'../user/user?user='+e.target.dataset.user
+        url:'/userPackage/pages/user/user?user='+e.target.dataset.user
       })
     }
   },

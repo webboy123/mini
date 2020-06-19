@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "reply-list":"/components/replyList/replyList"
+    "reply-list":"/detailPackage/pages/replyList/replyList"
   }
 }

@@ -1,5 +1,5 @@
 {
   "usingComponents": {
-    "topics":"/components/topics/topics"
+    "topics":"/userPackage/pages/topics/topics"
   }
 }
