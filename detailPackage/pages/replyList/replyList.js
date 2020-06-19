@@ -1,5 +1,5 @@
 // components/list/list.js
-const util = require("../../utils/util.js")
+const util = require("../../../utils/util.js")
 Component({
   /**
    * 组件的属性列表

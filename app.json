@@ -5,17 +5,17 @@
   ],
   "subPackages": [
     {
-      "root": "packageA",
+      "root": "detailPackage",
       "pages": [
         "pages/detail/detail",
-        "components/replyList/replyList"
+        "pages/replyList/replyList"
       ]
     },
     {
-      "root": "packageB",
+      "root": "userPackage",
       "pages": [
         "pages/user/user",
-        "components/topics/topics"
+        "pages/topics/topics"
       ]
     }
   ],
