@@ -13,9 +13,6 @@
           <text>{{index+1}}楼•4个月前</text>
         </view>
       </view>
-      <view class="reply-one-b">
-        {{item.ups.length}}
-      </view>
     </view>
     <view class="reply-two">
       <rich-text nodes="{{item.content}}"></rich-text>
