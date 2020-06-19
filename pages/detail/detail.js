@@ -13,13 +13,16 @@ Page({
   },
   getTopicsDetail(){
     request("topic/"+this.data.titleId,'get',{}).then((res) => {
-      console.log("res",res.data)
+      // console.log("res",res.data)
       res.data.last_reply_at = util.timeFn(res.data.last_reply_at);
-      let richText = res.data.content;
-      richText = richText.replace(/<p>/ig, `<p style="margin-bottom:20rpx;color:red"`);
+      let richText = res.data.content;  
+      richText = richText
+                        .replace(/\<img/gi,'<img style="width:100%;height:auto;"')
+                        .replace(/\<pre/gi,'<pre style="width:100%;background:#f7f7f7"');
+      console.log("richText",richText)
       this.setData({
         topicsDetail:res.data,
-        richText:richText
+        richText
       })
     })
   },

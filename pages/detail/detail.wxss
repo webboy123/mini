@@ -48,3 +48,6 @@
     box-sizing: border-box;
     background:white
 }
+view view.rich-text rich-text  {
+    line-height:60rpx
+}
