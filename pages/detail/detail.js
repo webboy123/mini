@@ -12,7 +12,11 @@ Page({
     richText:''
   },
   getTopicsDetail(){
-    request("topic/"+this.data.titleId,'get',{}).then((res) => {
+    const url = [
+      'topic',
+      this.data.titleId
+    ].join("/")
+    request(url,'get',{}).then((res) => {
       // console.log("res",res.data)
       res.data.last_reply_at = util.timeFn(res.data.last_reply_at);
       let richText = res.data.content;  
