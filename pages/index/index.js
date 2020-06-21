@@ -5,7 +5,12 @@ const request = require("../../utils/request.js")
 const util = require("../../utils/util.js")
 Page({
   data: {
-    navTab: ['全部','精华','分享', '客户端测试'],        
+    navTab: [
+      {name:'全部',type:''},
+      {name:'精华',type:'good'},
+      {name:'分享',type:'share'}, 
+      {name:'客户端测试',type:'ask'}
+    ],        
     currentTab: 0,
     sendList:[],
     list:[],
@@ -17,10 +22,11 @@ Page({
   },
   //事件处理函数
   onLoad: function () {
-    this.getInitData()
+    this.getData()
   },
   currentTab: function (e) {
-    console.log("e",e)
+    console.log("e",e.currentTarget.dataset.name)
+    this.getData({tab:e.currentTarget.dataset.name})
     if (this.data.currentTab == e.currentTarget.dataset.idx){
       return;
     }
@@ -34,10 +40,9 @@ Page({
     }
     this.data.sendList=[];
   },
-  getInitData(data = {}){
+  getData(data = {}){
     request("topics",'get',data).then(res => {
       console.log("res",res)
-      console.log("last_reply_at",util.timeFn(res.data[0].last_reply_at))
       this.setData({
         list:res.data,
       })
