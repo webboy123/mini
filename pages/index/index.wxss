@@ -9,5 +9,5 @@
   color:#fff;
   padding:3rpx 4rpx;
   box-sizing: border-box;
-  border-radius: 3rpx;
+  border-radius: 6rpx;
 }

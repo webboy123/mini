@@ -6,10 +6,10 @@ const util = require("../../utils/util.js")
 Page({
   data: {
     navTab: [
-      {id:1,name:'全部',type:''},
+      {id:1,name:'全部',type:'all'},
       {id:2,name:'精华',type:'good'},
       {id:3,name:'分享',type:'share'}, 
-      {id:4,name:'客户端测试',type:'ask'}
+      {id:4,name:'客户端测试',type:'dev'}
     ],        
     currentTab: 0,
     sendList:[],
