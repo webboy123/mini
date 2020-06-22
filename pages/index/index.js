@@ -20,11 +20,12 @@ Page({
     this.getData()
   },
   currentTab: function (e) {
+    // console.log("e",e.currentTarget.dataset)
     this.getData({tab:e.currentTarget.dataset.name})
     this.setData({
-      currentTab: e.currentTarget.dataset.id
+      currentTab: e.currentTarget.dataset.key
     })
-    console.log("e",e.currentTarget.dataset.id == this.data.currentTab)
+    console.log("e",e.currentTarget.dataset.key == this.data.currentTab)
   },
   getData(data = {}){
     request("topics",'get',data).then(res => {
