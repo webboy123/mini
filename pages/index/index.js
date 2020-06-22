@@ -6,10 +6,10 @@ const util = require("../../utils/util.js")
 Page({
   data: {
     navTab: [
-      {name:'全部',type:''},
-      {name:'精华',type:'good'},
-      {name:'分享',type:'share'}, 
-      {name:'客户端测试',type:'ask'}
+      {id:1,name:'全部',type:''},
+      {id:2,name:'精华',type:'good'},
+      {id:3,name:'分享',type:'share'}, 
+      {id:4,name:'客户端测试',type:'ask'}
     ],        
     currentTab: 0,
     sendList:[],
@@ -25,20 +25,11 @@ Page({
     this.getData()
   },
   currentTab: function (e) {
-    console.log("e",e.currentTarget.dataset.name)
+    console.log("e",e.currentTarget)
     this.getData({tab:e.currentTarget.dataset.name})
-    if (this.data.currentTab == e.currentTarget.dataset.idx){
-      return;
-    }
     this.setData({
-      currentTab: e.currentTarget.dataset.idx
+      currentTab: e.currentTarget.dataset.id
     })
-    this.select={
-      page: 1,
-      size: 6,
-      isEnd: false
-    }
-    this.data.sendList=[];
   },
   getData(data = {}){
     request("topics",'get',data).then(res => {
