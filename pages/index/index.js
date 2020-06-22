@@ -12,8 +12,7 @@ Page({
       {id:4,name:'客户端测试',type:'dev'}
     ],        
     currentTab: 0,
-    sendList:[],
-    list:[],
+    list:[]
   },
   //事件处理函数
   onLoad: function () {
@@ -25,7 +24,6 @@ Page({
     this.setData({
       currentTab: e.currentTarget.dataset.key
     })
-    console.log("e",e.currentTarget.dataset.key == this.data.currentTab)
   },
   getData(data = {}){
     request("topics",'get',data).then(res => {
