@@ -11,6 +11,9 @@ Component({
         console.log("newVal",newVal)
         const tempList = newVal.map(item => {
           item.create_at = util.timeFn(item.create_at)
+          item.content = item.content
+                                    .replace(/\<div/gi,'<div style="font-size:14px"')
+                                    .replace(/\<li/gi,'<li style="margin:10px 0px"');
           return item
         })
         this.setData({
