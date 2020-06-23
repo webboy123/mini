@@ -13,6 +13,7 @@ Component({
           item.create_at = util.timeFn(item.create_at)
           item.content = item.content
                                     .replace(/\<div/gi,'<div style="font-size:14px"')
+                                    .replace(/\<img/gi,'<img style="width:100%;height:auto"')
                                     .replace(/\<li/gi,'<li style="margin:10px 0px"');
           return item
         })
