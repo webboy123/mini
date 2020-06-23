@@ -17,11 +17,13 @@ Page({
       this.data.titleId
     ].join("/")
     request(url,'get',{}).then((res) => {
-      // console.log("res",res.data)
+      console.log("res",res.data)
       res.data.last_reply_at = util.timeFn(res.data.last_reply_at);
+      res.data.create_at = util.timeFn(res.data.create_at);
       let richText = res.data.content;  
       richText = richText
                         .replace(/\<img/gi,'<img style="width:100%;height:auto;"')
+                        .replace(/\<h2/gi,'<h2 style="margin:20px 0"')
                         .replace(/\<pre/gi,'<pre style="width:100%;background:#f7f7f7"');
       this.setData({
         topicsDetail:res.data,

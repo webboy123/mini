@@ -27,7 +27,7 @@ Page({
   },
   getData(data = {}){
     request("topics",'get',data).then(res => {
-      console.log("res",res)
+      // console.log("res",res)
       this.setData({
         list:res.data,
       })
